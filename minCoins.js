@@ -39,9 +39,14 @@ function minCoins(val){
         pennies = currentSum * 100;
     }
 
+    if (pennies != 1) {
 
-    return "$"+ val + " in the fewest coins possible is " + quarters + " quarter(s), " + dimes + " dime(s), " + nickels + " nickel(s), " + pennies + " pennies.";
+        return "$" + val + " in the fewest coins possible is " + quarters + " quarter(s), " + dimes + " dime(s), " + nickels + " nickel(s), " + pennies + " pennies.";
+    }
+    else{
+        return "$" + val + " in the fewest coins possible is " + quarters + " quarter(s), " + dimes + " dime(s), " + nickels + " nickel(s), " + pennies + " penny.";
 
+    }
 }
 
-console.log(minCoins(3.00));
+console.log(minCoins(3.01));
