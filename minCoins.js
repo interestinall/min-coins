@@ -4,11 +4,11 @@
 
 function minCoins(val){
     this.val = val;
-    var quarters;
-    var dimes;
-    var nickels;
-    var pennies;
-    var currentSum;
+    var quarters = 0;
+    var dimes = 0;
+    var nickels = 0;
+    var pennies = 0;
+    var currentSum = 0;
     var temp;
 
     if (val % .25 == 0){
@@ -40,8 +40,8 @@ function minCoins(val){
     }
 
 
-    return "$"+ val + " in fewest coins possible is " + quarters + " quarter(s), " + dimes + " dime(s), " + nickels + " nickel(s), " + pennies + " pennies.";
+    return "$"+ val + " in the fewest coins possible is " + quarters + " quarter(s), " + dimes + " dime(s), " + nickels + " nickel(s), " + pennies + " pennies.";
 
 }
 
-console.log(minCoins(4.13));
+console.log(minCoins(3.00));
